@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Social Media Content Agent</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>📱 Social Media Content Agent</h1>
+        <p>Create captions & hashtags instantly</p>
+
+        <input type="text" id="topic" placeholder="Enter topic (e.g. Fitness Motivation)">
+
+        <select id="platform">
+            <option value="">Select Platform</option>
+            <option value="Instagram">Instagram</option>
+            <option value="Twitter">Twitter (X)</option>
+            <option value="LinkedIn">LinkedIn</option>
+        </select>
+
+        <select id="tone">
+            <option value="">Select Tone</option>
+            <option value="Professional">Professional</option>
+            <option value="Funny">Funny</option>
+            <option value="Motivational">Motivational</option>
+        </select>
+
+        <button onclick="generateContent()">Generate Content</button>
+
+        <div class="output">
+            <h3>Generated Content 👇</h3>
+            <textarea id="result" readonly></textarea>
+            <button onclick="copyContent()">📋 Copy</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
